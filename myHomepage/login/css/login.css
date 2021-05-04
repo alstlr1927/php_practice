@@ -1,0 +1,54 @@
+#section_content {
+    height: 400px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#login_box {
+
+}
+
+#login_title {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 35px;
+    font-weight: bold;
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 20px;
+}
+
+#login_form {
+    margin-top: 80px;
+}
+
+ul#input_login {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+ul#input_login li {
+    margin-top: 20px;
+}
+
+input[type=text], input[type=password] {
+    width: 300px;
+    height: 30px;
+    border: 1px solid lightgrey;
+}
+
+div#login_btn {
+    width: 300px;
+    margin: 0 auto;
+}
+
+input[type=button] {
+    width: 100%;
+    background-color: #fd8e44;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #fd8e44;
+    margin-top: 50px;
+    height: 50px;
+}

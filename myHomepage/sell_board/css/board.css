@@ -1,0 +1,152 @@
+li {
+    list-style-type: none;
+}
+
+/*!*-------------------------- board_form --------------------------*!*/
+
+#board_form li {
+    border-bottom: 1px solid #cccccc;
+    padding: 10px;
+}
+
+#board_form span {
+    display: inline-block;
+}
+
+#board_form span.col1 {
+    width: 150px;
+    font-weight: bold;
+}
+
+#board_form textarea {
+    width: 500px;
+    height: 150px;
+}
+
+#board_form input:not([type=checkbox]):not([type=file]) {
+    width: 500px;
+    height: 25px;
+}
+
+/*!*-------------------------- board_list --------------------------*!*/
+
+#board_box {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#board_box h3 {
+    margin-top: 30px;
+    border-bottom: solid 2px #516e7f;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+#board_list li {
+    margin-right: 50px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#board_list li a {
+    color: black;
+    text-decoration: none;
+}
+
+#board_list li a:hover {
+    color: #fd8e44;
+}
+
+#board_list span {
+    display: inline-block;
+    text-align: center;
+}
+
+#page_num {
+    display: flex;
+    justify-content: center;
+}
+
+#page_num li a {
+    text-decoration: none;
+    color: #fd8e44;
+    margin: 0 10px;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.buttons button {
+    width: 80px;
+    margin-right: 10px;
+    background-color: #fd8e44;
+    border: 1px solid #fd8e44;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 0;
+}
+
+.buttons button:hover {
+    background-color: #fcab75;
+    border: 1px solid #fcab75;
+}
+
+/*!*-------------------------- board_view --------------------------*!*/
+
+#view_content li:nth-child(1) {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+#view_content li:nth-child(2) {
+    padding: 15px 15px 80px 15px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#ripple {
+    margin-left: 40px;
+}
+
+#ripple_title ul {
+    padding-left: 0;
+}
+
+#ripple_title li:nth-child(1) {
+    font-weight: bold;
+}
+
+#ripple_title li:nth-child(2) {
+    margin-left: 20px;
+}
+
+input[type=submit] {
+    background-color: #fd8e44;
+    border: 1px solid #fd8e44;
+    width: 50px;
+    border-radius: 10px;
+    padding: 3px 0;
+    margin-left: 20px;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: #fcab75;
+    border: 1px solid #fcab75;
+}
+
+#ripple_button input[type=submit] {
+    margin-top: 20px;
+    width: 80px;
+    padding: 5px 0;
+    margin-left: 0;
+}
+
+
