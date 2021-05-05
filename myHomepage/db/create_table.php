@@ -120,18 +120,34 @@ function create_table($con, $table_name)
                 break;
             case 'member':
                 $query = "CREATE TABLE IF NOT EXISTS `members` (
-                      `num` int(11) NOT NULL AUTO_INCREMENT,
-                      `id` char(15) NOT NULL,
-                      `pass` char(15) NOT NULL,
-                      `name` char(10) NOT NULL,
-                      `phone` char(11) NOT NULL,
-                      `email` char(80) DEFAULT NULL,
-                      `address` char(80) NOT NULL,
-                      `regist_day` char(20) DEFAULT NULL,
-                      `level` int(11) DEFAULT NULL,
-                      `point` int(11) DEFAULT NULL,
-                      PRIMARY KEY (`num`)
-                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+                          `num` int(11) NOT NULL AUTO_INCREMENT,
+                          `id` char(15) NOT NULL,
+                          `pass` char(15) NOT NULL,
+                          `name` char(10) NOT NULL,
+                          `phone` char(11) NOT NULL,
+                          `email` char(80) DEFAULT NULL,
+                          `address` char(80) NOT NULL,
+                          `regist_day` char(20) DEFAULT NULL,
+                          `level` int(11) DEFAULT NULL,
+                          `point` int(11) DEFAULT NULL,
+                          PRIMARY KEY (`num`)
+                        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+                ";
+                break;
+            case 'delete_members':
+                $query = "CREATE TABLE `delete_members` (
+                        `num` int(11) NOT NULL AUTO_INCREMENT,
+                        `id` char(15) NOT NULL,
+                        `pass` char(15) NOT NULL,
+                        `name` char(10) NOT NULL,
+                        `phone` char(11) NOT NULL,
+                        `email` char(80) DEFAULT NULL,
+                        `address` char(80) NOT NULL,
+                        `regist_day` char(20) DEFAULT NULL,
+                        `level` char(11) DEFAULT NULL,
+                        `point` char(11) DEFAULT NULL,
+                        primary key (`num`)
+                        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
                 ";
                 break;
             default :
