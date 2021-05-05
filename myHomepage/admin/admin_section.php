@@ -1,16 +1,16 @@
 <div id="admin_box">
 
-    <h3 id="member_title">
+    <h3 class="member_title">
         관리자 모드 > 회원수 그래프
     </h3>
 
     <div id="curve_chart" style="width: 900px; height: 500px"></div>
 
-    <h3 id="member_title">
+    <h3 class="member_title">
         관리자 모드 > 회원 관리
     </h3>
 
-    <ul id="member_list">
+    <ul class="member_list">
         <li>
             <span class="col1">번호</span>
             <span class="col2">아이디</span>
@@ -72,6 +72,70 @@
         }
         ?>
     </ul>
+
+    <h3 class="member_title">
+        관리자 모드 > 탈퇴 회원 관리
+    </h3>
+
+    <ul class="member_list">
+        <li>
+            <span class="col1">선택</span>
+            <span class="col2">아이디</span>
+            <span class="col3">이름</span>
+            <span class="col4">레벨</span>
+            <span class="col5">포인트</span>
+            <span class="col6">가입일</span>
+            <span class="col7">복구</span>
+            <span class="col8">영구 삭제</span>
+        </li>
+
+        <?php
+        if (!isset($_SESSION['userid']) && $_SESSION['userlevel'] !== '1') {
+            echo("
+						            <script>
+						            alert('관리자만 접근가능합니다');
+						            history.go(-1)
+						            </script>
+						        ");
+            exit;
+        }
+        $sql = "select * from delete_members order by num desc";
+        $result = mysqli_query($con, $sql);
+
+        $total_record = mysqli_num_rows($result);
+        $number = $total_record;
+
+        while ($row = mysqli_fetch_array($result)) {
+            $num = $row['num'];
+            $id = $row['id'];
+            $name = $row['name'];
+            $level = $row['level'];
+            $point = $row['point'];
+            $regist_day = $row['regist_day'];
+            ?>
+            <li>
+                <form method="post" action="admin_quit_restore.php">
+                    <input type="hidden" name="num" value="<?= $num ?>">
+                    <span class="col1"><?= $number ?></span>
+                    <span class="col2"><?= $id ?></span>
+                    <span class="col3"><?= $name ?></span>
+                    <span class="col4"><?= $level ?></span>
+                    <span class="col5"><?= $point ?></span>
+                    <span class="col6"><?= $regist_day ?></span>
+                    <span class="col7"><button type="submit">복구</button></span>
+                    <span class="col8"><button type="button"
+                                               onclick="location.href='admin_quit_delete.php?num=<?= $num ?>'">삭제</button></span>
+                </form>
+            </li>
+            <?php
+            $number--;
+        }
+
+        ?>
+
+    </ul>
+
+
     <h3 class="member_title">
         관리자 모드 > '팝니다' 게시판 관리
     </h3>

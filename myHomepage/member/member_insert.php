@@ -3,6 +3,7 @@
 include $_SERVER['DOCUMENT_ROOT'] . "/myHomepage/db/db_connect.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/myHomepage/db/create_table.php";
 create_table($con, 'members');
+create_table($con, 'delete_members'); // 회원 탈퇴 테이블
 
 $id = $_POST["id"];
 $pass = $_POST["pass"];

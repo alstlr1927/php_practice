@@ -144,8 +144,8 @@ function create_table($con, $table_name)
                         `email` char(80) DEFAULT NULL,
                         `address` char(80) NOT NULL,
                         `regist_day` char(20) DEFAULT NULL,
-                        `level` char(11) DEFAULT NULL,
-                        `point` char(11) DEFAULT NULL,
+                        `level` int(11) DEFAULT NULL,
+                        `point` int(11) DEFAULT NULL,
                         primary key (`num`)
                         ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
                 ";

@@ -19,11 +19,11 @@ li {
     margin: 30px 0 10px 0;
 }
 
-#member_list {
+.member_list {
     margin: 10px 0 30px 0;
 }
 
-#member_list li:nth-child(1) {
+.member_list li:nth-child(1) {
     font-weight: bold;
     border-top: solid 2px #f88132;
     border-bottom: solid 2px #f88132;
@@ -31,23 +31,23 @@ li {
     color: white;
 }
 
-#member_list li {
+.member_list li {
     padding: 10px 0;
     border-bottom: solid 1px #dddddd;
 }
 
-#member_list span {
+.member_list span {
     display: inline-block;
     text-align: center;
 }
 
-#member_list input {
+.member_list input {
     width: 40px;
     height: 20px;
     text-align: center;
 }
 
-#member_list button {
+.member_list button {
     padding: 3px 10px;
     background-color: #fd8e44;
     border-radius: 10px;
@@ -55,41 +55,43 @@ li {
     color: white;
 }
 
-#member_list button:hover {
+.member_list button:hover {
     background-color: #fcab75;
     border: 1px solid #fcab75;
 }
 
-#member_list .col1 {
+.member_list .col1 {
     width: 80px;
 }
 
-#member_list .col2 {
+.member_list .col2 {
     width: 100px;
 }
 
-#member_list .col3 {
+.member_list .col3 {
     width: 80px;
 }
 
-#member_list .col4 {
+.member_list .col4 {
     width: 80px;
 }
 
-#member_list .col5 {
+.member_list .col5 {
     width: 80px;
 }
 
-#member_list .col6 {
+.member_list .col6 {
     width: 170px;
+    margin-left: 10px;
 }
 
-#member_list .col7 {
-    width: 70px;
+.member_list .col7 {
+    width: 100px;
+    margin-left: 20px;
 }
 
-#member_list .col8 {
-    width: 70px;
+.member_list .col8 {
+    width: 100px;
 }
 
 #admin_box h3#board_title {
