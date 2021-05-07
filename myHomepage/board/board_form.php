@@ -60,9 +60,9 @@ if (empty($userid)) {
     <div id="board_box">
         <h3 id="board_title">
             <?php if ($mode === "modify"): ?>
-                '팝니다' 게시판 > 수정하기
+                자료실 > 수정하기
             <?php else: ?>
-                '팝니다' 게시판 > 글 쓰기
+                자료실 > 작성하기
             <?php endif; ?>
         </h3>
 <!--        파일을 첨부할때는 enctype="multipart/form-data"를 반드시 폼태그에 입력해야함-->

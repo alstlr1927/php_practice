@@ -7,11 +7,15 @@
                 <td>
                     <input type="text" name="id" size="14" spellcheck="false">
                     <input type="button" value="Check" id="check">
+                    <span>•  4~8자리의 영문, 숫자만 가능</span>
                 </td>
             </tr>
             <tr>
                 <th>Password</th>
-                <td><input type="password" name="pass" size="14"></td>
+                <td>
+                    <input type="password" name="pass" size="14">
+                    <span>•  4~12자리의 영문, 숫자, 특수문자(!,@,$,%,^,&,*)만 가능</span>
+                </td>
             </tr>
             <tr>
                 <th>Password Check</th>
@@ -19,7 +23,10 @@
             </tr>
             <tr>
                 <th>Name</th>
-                <td><input type="text" name="name" size="14" spellcheck="false"></td>
+                <td>
+                    <input type="text" name="name" size="14" spellcheck="false">
+                    <span>•  띄어쓰기 없이 입력, 반드시 실명이여야 합니다.</span>
+                </td>
             </tr>
             <tr>
                 <th>Phone</th>
@@ -43,7 +50,7 @@
         </table>
         <br>
         <div id="btnSign">
-            <input type="submit" value="Sign-In">
+            <input id="btn_sign_in" type="button" value="Sign-In" onclick="check_data()">
         </div>
     </form>
 </div>

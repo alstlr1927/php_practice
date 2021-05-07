@@ -133,6 +133,7 @@
 
         $subject = $_POST["subject"];
         $content = $_POST["content"];
+
         $file_delete = (isset($_POST["file_delete"])) ? $_POST["file_delete"] : 'no';
 
         $sql = "select * from sell_board where num = $num";

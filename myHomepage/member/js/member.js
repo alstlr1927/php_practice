@@ -1,7 +1,6 @@
-let btnSign = document.querySelector("input[type=submit]");
 let btnCheck = document.querySelector("#check");
 
-btnSign.addEventListener("click", function () {
+function check_data() {
     if(!document.sign_form.id.value) {
         alert("Input ID.");
         document.sign_form.id.focus();
@@ -71,10 +70,11 @@ btnSign.addEventListener("click", function () {
     }
 
     document.sign_form.submit();
-});
+}
 
 btnCheck.addEventListener("click", function() {
     window.open("member_check_id.php?id=" + document.sign_form.id.value,
         "IDcheck",
         "left=700,top=300,width=350,height=200,scrollbars=no,resizable=yes");
 });
+

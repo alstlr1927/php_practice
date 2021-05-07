@@ -5,12 +5,11 @@ let data;
 
 function drawChart() {
     data = google.visualization.arrayToDataTable([
-        ['Year', 'Sales'],
-        ['1994-05',  3],
-        ['1994-06',  4],
-        ['1995-02',  5],
-        ['1995-11',  6],
-        ['1998-05',  7],
+        ['Year', 'member_count'],
+        ['2021.01.22',  2],
+        ['2021.02.02',  3],
+        ['2021.02.19',  4],
+        ['2021.02.21',  6],
     ]);
 
     var options = {

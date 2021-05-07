@@ -20,7 +20,7 @@
 <section>
     <div id="board_box">
         <h3 class="title">
-            '팝니다' 게시판 > 내용보기
+            자료실 > 내용보기
         </h3>
         <?php
         if (!$userid) {

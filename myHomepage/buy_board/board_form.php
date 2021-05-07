@@ -56,9 +56,9 @@
 			<div id="board_box">
 				<h3 id="board_title">
                     <?php if ($mode === "modify"): ?>
-						이미지 게시판 > 수정 하기
+						`삽니다` 게시판 > 수정 하기
                     <?php else: ?>
-						이미지 게시판 > 글 쓰기
+						`삽니다` 게시판 > 글 쓰기
                     <?php endif; ?>
 				</h3>
 				<form name="board_form" method="post" action="dmi_board.php" enctype="multipart/form-data">

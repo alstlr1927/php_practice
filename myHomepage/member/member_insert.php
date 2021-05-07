@@ -5,15 +5,15 @@ include $_SERVER['DOCUMENT_ROOT'] . "/myHomepage/db/create_table.php";
 create_table($con, 'members');
 create_table($con, 'delete_members'); // 회원 탈퇴 테이블
 
-$id = $_POST["id"];
-$pass = $_POST["pass"];
-$name = $_POST["name"];
-$tel1 = $_POST["tel1"];
-$tel2 = $_POST["tel2"];
-$tel3 = $_POST["tel3"];
-$email1 = $_POST["email1"];
-$email2 = $_POST["email2"];
-$addr = $_POST["addr"];
+$id = input_set($_POST["id"]);
+$pass = input_set($_POST["pass"]);
+$name = input_set($_POST["name"]);
+$tel1 = input_set($_POST["tel1"]);
+$tel2 = input_set($_POST["tel2"]);
+$tel3 = input_set($_POST["tel2"]);
+$email1 = input_set($_POST["email1"]);
+$email2 = input_set($_POST["email2"]);
+$addr = input_set($_POST["addr"]);
 
 //이름형식 검증
 $patternName = "/[가-힣]+/";
@@ -34,6 +34,11 @@ $sql = "insert into members(id, pass, name, phone, email, address, regist_day, l
 $sql .= "values('$id', '$pass', '$name', '$phone', '$email', '$addr', '$regist_day', 9, 10)";
 
 $result = mysqli_query($con, $sql);  // $sql 에 저장된 명령 실행
+?>
+    <script>
+        window.alert(<?= $result ?>);
+    </script>
+<?php
 if (!$result) {
     alert_back("삽입이 잘못 되었습니다. 다시 입력하시기 바랍니다.");
     mysqli_query($con, "ROLLBACK");

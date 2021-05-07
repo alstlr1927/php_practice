@@ -3,7 +3,9 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>PHP 프로그래밍 입문</title>
+		<title></title>
+        <script src="https://kit.fontawesome.com/81f1a13e9a.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/normalize.css">
 		<link rel="stylesheet" type="text/css"
@@ -55,9 +57,9 @@
 			<div id="board_box">
 				<h3 id="board_title">
                     <?php if ($mode === "modify"): ?>
-						이미지 게시판 > 수정 하기
+						`팝니다` 게시판 > 수정 하기
                     <?php else: ?>
-						이미지 게시판 > 글 쓰기
+                        `팝니다` 게시판 > 글 쓰기
                     <?php endif; ?>
 				</h3>
 				<form name="board_form" method="post" action="dmi_board.php" enctype="multipart/form-data">

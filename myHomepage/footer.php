@@ -13,17 +13,15 @@
     <div>
         <h4>Resource</h4>
         <ul class="developer_info">
-            <li>Resource</li>
-            <li>Resource name</li>
-            <li>Another resource</li>
-            <li>Final resource</li>
+            <li>Icon - <a href="https://fontawesome.com" target="_blank">Font Awesome</a></li>
+            <li>Font - <a href="https://fonts.google.com/specimen/Noto+Sans+KR?query=noto+sans+kr" target="_blank">Google Font</a></li>
         </ul>
     </div>
     <div>
         <h4>About</h4>
         <ul class="developer_info">
-            <li>Team</li>
-            <li>Locations</li>
+            <li>Solo Project</li>
+            <li>Mirae</li>
             <li>Privacy</li>
             <li>Terms</li>
         </ul>

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>경아 페이지</title>
+		<title></title>
         <script src="https://kit.fontawesome.com/81f1a13e9a.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/main.css">
